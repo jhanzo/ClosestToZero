@@ -2,7 +2,7 @@ import { closestToZero } from '../app';
 import { expect } from 'chai';
 import 'mocha';
 
-describe('List of numbers', () => {
+describe('[closestToZero] List of numbers', () => {
 
   describe('with positive numbers only', () => {
     it('should return closest value to zero', () => {
