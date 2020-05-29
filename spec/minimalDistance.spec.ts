@@ -32,14 +32,30 @@ describe('[minDistance] List of numbers', () => {
     it('should return minimal distance', () => {
       const inputs = []
       const result = minDistance(inputs);
-      expect(result).to.equal(-1);
+      expect(result).to.equal(NaN);
     });
   });
 
   describe('with undefined list of numbers', () => {
     it('should return minimal distance', () => {
       const result = minDistance();
-      expect(result).to.equal(-1);
+      expect(result).to.equal(NaN);
+    });
+  });
+
+  describe('with same numbers', () => {
+    it('should return 0', () => {
+      const inputs = [8, 8, 8, 8]
+      const result = minDistance(inputs);
+      expect(result).to.equal(0);
+    });
+  });
+
+  describe('with 2 same numbers', () => {
+    it('should return 0', () => {
+      const inputs = [8, 3, 4, 8]
+      const result = minDistance(inputs);
+      expect(result).to.equal(0);
     });
   });
 });
