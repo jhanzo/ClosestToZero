@@ -32,14 +32,14 @@ describe('[minDistance] List of numbers', () => {
     it('should return minimal distance', () => {
       const inputs = []
       const result = minDistance(inputs);
-      expect(result).to.equal(NaN);
+      expect(result).to.equal(0);
     });
   });
 
   describe('with undefined list of numbers', () => {
     it('should return minimal distance', () => {
       const result = minDistance();
-      expect(result).to.equal(NaN);
+      expect(result).to.equal(0);
     });
   });
 
