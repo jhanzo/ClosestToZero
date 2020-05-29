@@ -8,7 +8,7 @@ describe('[minDistance] List of numbers', () => {
     it('should return minimal distance', () => {
       const inputs = [8, 5, 10]
       const result = minDistance(inputs);
-      expect(result).to.equal(3);
+      expect(result).to.equal(2);
     });
   });
 
@@ -16,7 +16,7 @@ describe('[minDistance] List of numbers', () => {
     it('should return minimal distance', () => {
       const inputs = [5, 4, -9, 6, -10, -1, 8]
       const result = minDistance(inputs);
-      expect(result).to.equal(8);
+      expect(result).to.equal(1);
     });
   });
 
@@ -24,7 +24,7 @@ describe('[minDistance] List of numbers', () => {
     it('should return minimal distance', () => {
       const inputs = [8, 2, 3, -2]
       const result = minDistance(inputs);
-      expect(result).to.equal(5);
+      expect(result).to.equal(1);
     });
   });
 
