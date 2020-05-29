@@ -1,6 +1,15 @@
 # ClosestToZero
+<<<<<<< HEAD
 Modification Kellian
+=======
+
+
+- I'm going to modify something. samuel13750
+
+>>>>>>> jhanzo/master
 Given an array of postive and negative integers, find the closest number to zero. If the closest number in input could be either negative or positive, the function returns the positive one. If the input array is undefined or empty, the function returns 0.
+
+Test for update
 
 ## Installation
 

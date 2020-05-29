@@ -4,7 +4,8 @@
   "description": "Find closest number to 0",
   "main": "app.ts",
   "scripts": {
-    "start": "tsc app.ts",
+    "build": "tsc app.ts",
+    "start": "ts-node app.ts",
     "test": "mocha --require ts-node/register ./spec/*.spec.ts",
     "tsc": "tsc"
   },
