@@ -15,5 +15,10 @@ export const minDistance = (inputs: number[] = []): number => {
         const newMin = sorted[i + 1] - sorted[i];
         min = newMin < min && newMin > 0 ? newMin : min;
     }
+
+    if(min < 0)
+    {
+        return 0;
+    }
     return min;
 };
