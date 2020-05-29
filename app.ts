@@ -34,3 +34,13 @@ const a = [9, 5, 15, 9, 3];
 
 console.log(a);
 console.log(minDistance(a));
+
+export const minDistanceProf = (inputs: number[] = []): number => {
+    const sorted = inputs.map(e => Math.abs(e)).sort((a, b) => a < b ? -1 : 1)
+    var min = sorted[sorted.length - 1] - sorted[0];
+    for (let i = 0; i < sorted.length; i++) {
+        const newMin = sorted[i] - sorted[i + 1];
+        min = newMin < min && newMin > 0 ? newMin : min;
+    }
+    return min;
+}
