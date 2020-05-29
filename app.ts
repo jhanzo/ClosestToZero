@@ -9,7 +9,7 @@ export const closestToZero = (inputs: number[] = []): number => {
 };
 
 export const minDistance = (inputs: number[] = []): number => {
-    const sorted = inputs.map(e => Math.abs(e)).sort((a, b) => a < b ? -1 : 1)
+    const sorted = inputs.map(e => e).sort((a, b) => a < b ? -1 : 1);
     var min = sorted[sorted.length - 1] - sorted[0];
     for (let i = 0; i < sorted.length; i++) {
         const newMin = sorted[i + 1] - sorted[i];
