@@ -17,7 +17,3 @@ export const minDistance = (inputs: number[] = []): number => {
     }
     return min;
 }
-
-const a = [1, 8, 8, 5];
-console.log(a);
-console.log("Result: " + minDistance(a));
